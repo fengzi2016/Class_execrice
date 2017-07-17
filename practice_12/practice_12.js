@@ -91,8 +91,8 @@ class Teacher extends  Person{
 }
 let name='Tom',age=21,id=2016;
 let klass=new Klass(2,[2015,2016]);
-klass.Leader=false;
 let student= new Student(id,name,age,klass);
+student.klass.Leader=true;
 console.log(student.introduce());
 let teacher=new Teacher(id,name,age,[2,3]);
 teacher.isTeaching(student);
